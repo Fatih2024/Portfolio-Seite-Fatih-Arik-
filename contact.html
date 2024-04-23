@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt - Fatih Arik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        nav h2 a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .personal-data {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .personal-data h1 {
+            color: #007bff;
+        }
+
+        .personal-data ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .personal-data ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .shortcut-icons a {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            margin-right: 15px;
+            border: 1px solid transparent;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .shortcut-icons img {
+            margin-right: 8px;
+        }
+
+        .shortcut-icons a:hover {
+            border-color: #007bff;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* JavaScript Interaktion im CSS */
+        .shortcut-icons a:focus {
+            animation: pulse 1s infinite;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2><a href="index.html">Hauptseite</a></h2>
+</nav>
+
+<section class="personal-data">
+    <h1>Kontakt</h1>
+    <ul>
+        <li><strong>Name:</strong> Fatih Arik</li>
+        <li><strong>Anschrift:</strong> Ötztalerstr. 10, 44339 Dortmund</li>
+        <li><strong>Telefon:</strong> +49 (174) 9520983</li>
+        <li><strong>E-Mail:</strong> fthrk.85@gmail.com</li>
+        <li><strong>E-Mail:</strong> arikfatih@outlook.com</li>
+    </ul>
+
+    <div class="shortcut-icons">
+        <a href="https://www.linkedin.com/in/fatih2023/">
+            <img src="png/linkeden.png" alt="LinkedIn Profil" > LinkedIn
+        </a>
+        <a href="https://www.gmail.com">
+            <img src="png/gmail.png" alt="Gmail" > Gmail
+        </a>
+        <a href="https://github.com/Fatih2024">
+            <img src="png/Herunterladen.png" alt="GitHub Profil" > GitHub
+        </a>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const icons = document.querySelectorAll('.shortcut-icons a');
+
+        icons.forEach(icon => {
+            icon.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = "#e7f3ff";
+            });
+            icon.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = "transparent";
+            });
+        });
+    });
+</script>
+</body>
+</html>

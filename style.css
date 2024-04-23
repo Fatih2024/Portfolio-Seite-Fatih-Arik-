@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+.nav {
+    position: relative;
+    z-index: 1001;
+
+}
+
+.nav .nav-list {
+    position: fixed;
+    top: 0;
+    right: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1001;
+    background-color: transparent;
+    padding-top: 30px;
+    color: teal;
+
+}
+
+.nav .nav-list .item {
+    margin-right: 3px;
+}
+
+
+
+.item {
+    border: 1px solid black;
+    border-top: 10px solid darkred;
+    box-shadow: 0 0 10px black;
+    grid-row: revert;
+    padding: 20px;
+    border-radius: 33px;
+    transition: all 1000ms;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color:darkcyan;
+    color:wheat;
+}
+
+.item:hover a {
+    text-decoration: underline;
+    color: white;
+}
+
+
+
+.header {
+    width: 600px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid black;
+    position: relative;
+    background-color: transparent;
+    border-radius: 15px;
+    border-top: 10px solid green;
+    box-shadow: 0 0 15px green;
+}
+
+
+
+
+.shortcuts {
+    display: flex;
+    padding: 1px 20px;
+}
+
+
+.shortcuts .shortcut-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:50px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.shortcut-icon:hover {
+    background-color: chocolate;
+    transform: scale(1.6);
+}
+
+
+
+
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 30px;
+    right: 3px;
+    padding: 7px 10px;
+    z-index: 1002;
+    cursor: pointer;
+    border-radius: 40px;
+    border-top: 10px solid black;
+    background-color: cadetblue;
+}
+
+
+
+body.dark-mode {
+    background-color: #333;
+    color:white;
+}
+
+body.dark-mode a {
+    color: gray;
+}
+
+body.dark-mode {
+    background-color: #444;
+
+}
+
+body.dark-mode .grid-item{
+    background-color: grey;
+    color: white;
+}
+
+
+
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    gap: 20px;
+}
+
+.main-img img {
+
+    border-radius: 12px;
+    width: 90px;
+    height: 100px;
+}
+
+.profile-info h2 {
+    margin: 0;
+
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9eaec;
+    margin: auto;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 400px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    border: 3px solid black;
+    border-top: #4CAF50;
+    border-radius: 11px;
+    background-color:white;
+    box-shadow: 0 3px red;
+}
+
+
+h2:hover{
+    background-color:teal;
+}
+
+.erklaerung {
+    margin: 30px;
+}
+
+.grid-container {
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+}
+
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #a8a6a6;
+}
+
+.box1 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-top: 10px solid red;
+    box-shadow: 1px 1px 10px red;
+}
+
+
+.box2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-top: 10px solid orange;
+    box-shadow: 0 0 10px orange;
+}
+
+.box3 {
+    grid-row-start: 3;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-top: 10px solid blue;
+    box-shadow: 0 0 10px blue;
+}
+
+.box4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: -1;
+    border-top: 10px solid green;
+    box-shadow: 0 0 10px green;
+}
+
+
+
+.site-footer {
+    margin-top: 7px;
+    padding: 3px;
+    text-align: center;
+    background-color: gainsboro;
+    color: #343a40;
+    border-top: 23px solid transparent;
+    width: 100%;
+}
+
+body.dark-mode .site-footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.site-footer a {
+    color: inherit;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+.projekt ol {
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.2;
+}
+
+.projekt li {
+    margin-bottom: 3px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
